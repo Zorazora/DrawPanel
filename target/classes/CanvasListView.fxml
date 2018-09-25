@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="403.0" prefWidth="238.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CanvasListController">
+   <children>
+      <ListView fx:id="list" layoutX="11.0" layoutY="32.0" prefHeight="367.0" prefWidth="221.0" />
+      <Label layoutY="-1.0" prefHeight="32.0" prefWidth="243.0" text="                          画板名称" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

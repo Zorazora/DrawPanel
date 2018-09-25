@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="186.0" prefWidth="453.0" style="-fx-background-color: #E8E8E8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CanvasSaveController">
+   <children>
+      <ImageView fitHeight="61.0" fitWidth="85.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/选色.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="109.0" layoutY="14.0" prefHeight="23.0" prefWidth="289.0" text="您要存储对此画板的更改吗？">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="48.0" prefHeight="17.0" prefWidth="235.0" text="如果不存储，您修改的内容将会丢失。" textFill="#544d4d" />
+      <Label layoutX="109.0" layoutY="76.0" text="存储为:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="170.0" layoutY="72.0" prefHeight="23.0" prefWidth="167.0" promptText="未命名" />
+      <Button fx:id="notSave" layoutX="109.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleNotSave" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: white;" text="不存储" textAlignment="CENTER" />
+      <Button fx:id="cancel" layoutX="285.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="27.0" prefWidth="50.0" style="-fx-background-color: white;" text="取消" textAlignment="CENTER" />
+      <Button fx:id="confirm" layoutX="344.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleConfirm" prefHeight="27.0" prefWidth="50.0" style="-fx-background-color: #1E90FF;" text="确定" textAlignment="CENTER" textFill="WHITE" />
+   </children>
+</AnchorPane>
